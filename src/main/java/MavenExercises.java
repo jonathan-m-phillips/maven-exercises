@@ -11,11 +11,16 @@ public class MavenExercises {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter something: ");
         String userInput = scan.nextLine();
-        try {
-            int userNum = Integer.parseInt(userInput);
-        } catch (Exception e) {
-            System.err.println("This is not a number.");
-        }
+
+        boolean valid = false;
+        do {
+            if (StringUtils.isNumeric(userInput)) {
+                System.out.print("This is a number. Try again. \nEnter anything below:\n");
+                userInput = scan.nextLine();
+            } else {
+                valid = true;
+            }
+        } while (!valid);
 
         String swapCase = StringUtils.swapCase(userInput);
         System.out.println("Case-swapped: " + "'" + swapCase + "'");
