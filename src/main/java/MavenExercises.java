@@ -23,8 +23,8 @@ public class MavenExercises {
         String reverseString = StringUtils.reverse(userInput);
         System.out.println(userInput + " reversed: " + "'" + reverseString + "'");
 
-
-
+        String reverseSwapCase = StringUtils.reverse(swapCase);
+        System.out.println("Reversed and case-swapped: " + "'" + reverseSwapCase + "'");
 
     }
 }
