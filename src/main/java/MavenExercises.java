@@ -20,6 +20,10 @@ public class MavenExercises {
         String swapCase = StringUtils.swapCase(userInput);
         System.out.println("Case-swapped: " + "'" + swapCase + "'");
 
+        String reverseString = StringUtils.reverse(userInput);
+        System.out.println(userInput + " reversed: " + "'" + reverseString + "'");
+
+
 
 
     }
